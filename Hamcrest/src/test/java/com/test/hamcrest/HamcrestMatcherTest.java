@@ -282,21 +282,21 @@ public class HamcrestMatcherTest {
 
 	@Test
 	public void givenMapAndKey_whenKeyFoundInMap_thenCorrect() {
-		Map<String, String> map = new HashMap();
+		Map<String, String> map = new HashMap<String, String>();
 		map.put("blogname", "baeldung");
 		assertThat(map, hasKey("blogname"));
 	}
 
 	@Test
 	public void givenMapAndEntry_whenEntryFoundInMap_thenCorrect() {
-		Map<String, String> map = new HashMap();
+		Map<String, String> map = new HashMap<String, String>();
 		map.put("blogname", "baeldung");
 		assertThat(map, hasEntry("blogname", "baeldung"));
 	}
 
 	@Test
 	public void givenMapAndValue_whenValueFoundInMap_thenCorrect() {
-		Map<String, String> map = new HashMap();
+		Map<String, String> map = new HashMap<String, String>();
 		map.put("blogname", "baeldung");
 		assertThat(map, hasValue("baeldung"));
 	}
