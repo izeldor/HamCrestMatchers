@@ -1,5 +1,9 @@
 package com.test.hamcrest;
 
+/**
+ * Person class
+ *
+ */
 public class Person {
 	String name;
 	String address;
